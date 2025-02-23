@@ -1,0 +1,39 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Black Magic Probe (OneKey Proton-C)",
+      "type": "cortex-debug",
+      "request": "launch",
+      "cwd": "${workspaceRoot}",
+      "executable": "${workspaceRoot}/.build/handwired_onekey_proton_c_default.elf",
+      "servertype": "bmp",
+      "BMPGDBSerialPort": "COM4",
+      "svdFile": "Q:\\svd\\STM32F303.svd",
+      "device": "STM32F303",
+      "v1": false,
+      "windows": {
+        "armToolchainPath": "C:\\QMK_MSYS\\mingw64\\bin"
+      }
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Users/simon/qmk_firmware/keyboards/proto_pad_v2/keymaps/default",
+      "program": "c:/Users/simon/qmk_firmware/keyboards/proto_pad_v2/keymaps/default/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
