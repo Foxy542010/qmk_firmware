@@ -23,8 +23,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/simon/qmk_firmware/keyboards/proto_pad_v2/keymaps/default",
-      "program": "c:/Users/simon/qmk_firmware/keyboards/proto_pad_v2/keymaps/default/build/Debug/outDebug",
+      "cwd": "c:/Users/simon/qmk_firmware/keyboards/charlotte_v1/keymaps/default",
+      "program": "c:/Users/simon/qmk_firmware/keyboards/charlotte_v1/keymaps/default/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
