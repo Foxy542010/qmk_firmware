@@ -4,6 +4,10 @@
     "maintainer": "Foxy5410",
     "bootloader": "caterina",
     "diode_direction": "COL2ROW",
+    "build": {
+        "firmware_format": "hex",
+        "lto": true
+    },
     "features": {
         "bootmagic": true,
         "command": false,
@@ -11,9 +15,7 @@
         "extrakey": true,
         "mousekey": true,
         "nkro": true,
-        "os_detection": true,
-        "oled": true,
-        "rgblight": false
+        "oled": true
     },
     "encoder": {
         "rotary": [
