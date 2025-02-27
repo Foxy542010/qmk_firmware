@@ -15,7 +15,9 @@
         "extrakey": true,
         "mousekey": true,
         "nkro": true,
-        "oled": true
+        "oled": true,
+        "music": false,
+        "rgblight": false
     },
     "encoder": {
         "rotary": [
