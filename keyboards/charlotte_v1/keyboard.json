@@ -5,13 +5,15 @@
     "bootloader": "caterina",
     "diode_direction": "COL2ROW",
     "features": {
-        "bootmagic": false,
+        "bootmagic": true,
         "command": false,
         "console": false,
-        "extrakey": false,
-        "mousekey": false,
-        "nkro": false,
-        "oled": true
+        "extrakey": true,
+        "mousekey": true,
+        "nkro": true,
+        "os_detection": true,
+        "oled": true,
+        "rgblight": false
     },
     "encoder": {
         "rotary": [
