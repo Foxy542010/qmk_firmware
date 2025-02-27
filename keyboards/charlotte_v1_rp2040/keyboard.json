@@ -2,10 +2,10 @@
     "manufacturer": "Kirole",
     "keyboard_name": "Charlotte V1.0",
     "maintainer": "Foxy5410",
-    "bootloader": "caterina",
+    "bootloader": "rp2040",
     "diode_direction": "COL2ROW",
     "build": {
-        "firmware_format": "hex",
+        "firmware_format": "uf2",
         "lto": true
     },
     "features": {
@@ -19,14 +19,14 @@
     },
     "encoder": {
         "rotary": [
-            {"pin_a": "F4", "pin_b": "F5"}
+            {"pin_a": "GP14", "pin_b": "GP15"}
         ]
     },
     "matrix_pins": {
-        "cols": ["E6", "D7", "C6", "D4"],
-        "rows": ["B4", "B5"]
+        "cols": ["GP21", "GP20", "GP19", "GP18"],
+        "rows": ["GP17", "GP16"]
     },
-    "processor": "atmega32u4",
+    "processor": "RP2040",
     "url": "",
     "usb": {
         "device_version": "1.0.0",
@@ -37,10 +37,13 @@
         "LAYOUT": {
             "layout": [
                 {"matrix": [0, 0], "x": 0, "y": 0},
+
                 {"matrix": [0, 1], "x": 1, "y": 0},
                 {"matrix": [0, 2], "x": 2, "y": 0},
                 {"matrix": [0, 3], "x": 3, "y": 0},
+
                 {"matrix": [1, 0], "x": 0, "y": 1},
+
                 {"matrix": [1, 1], "x": 1, "y": 1},
                 {"matrix": [1, 2], "x": 2, "y": 1},
                 {"matrix": [1, 3], "x": 3, "y": 1}
