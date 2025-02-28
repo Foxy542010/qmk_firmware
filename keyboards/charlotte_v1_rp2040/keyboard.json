@@ -9,7 +9,7 @@
         "lto": true
     },
     "features": {
-        "bootmagic": true,
+        "bootmagic": false,
         "command": false,
         "console": false,
         "extrakey": true,
