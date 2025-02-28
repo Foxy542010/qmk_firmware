@@ -2,5 +2,7 @@
 
 #include_next <mcuconf.h>
 
-#undef STM32_I2C_USE_I2C2
-#define STM32_I2C_USE_I2C2 TRUE
+#define I2C_DRIVER I2CD1
+
+#undef RP_I2C_USE_I2C1
+#define RP_I2C_USE_I2C1 TRUE
