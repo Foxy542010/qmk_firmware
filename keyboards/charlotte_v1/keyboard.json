@@ -9,7 +9,7 @@
         "lto": true
     },
     "features": {
-        "bootmagic": true,
+        "bootmagic": false,
         "command": false,
         "console": false,
         "extrakey": true,
@@ -30,7 +30,7 @@
     "url": "",
     "usb": {
         "device_version": "1.0.0",
-        "pid": "0x0001",
+        "pid": "0x4658",
         "vid": "0x4B52"
     },
     "layouts": {
