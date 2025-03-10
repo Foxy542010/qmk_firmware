@@ -6,9 +6,6 @@
 #define LAYER_SWITCH_START 0
 #define LAYER_SWITCH_END 3
 
-enum via_display_value {
-    id_diplay_brightness = 1,
-};
 enum custom_macros { KC_SL = QK_USER, };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
