@@ -1,3 +1,5 @@
+// Copyright 2024-2025 Šimon Ondrašík
+
 #include QMK_KEYBOARD_H
 
 #define _______ KC_TRNS
