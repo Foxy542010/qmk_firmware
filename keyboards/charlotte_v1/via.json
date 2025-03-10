@@ -1,0 +1,45 @@
+{
+    "name": "Charlotte V1.0",
+    "vendorId": "0x4B52",
+    "productId": "0x4658",
+    "matrix": {
+        "rows": 2,
+        "cols": 4
+    },
+    "menus": [
+        {
+            "label": "Display",
+            "content": [
+                {
+                    "label": "Brightness",
+                    "content": [
+                        {
+                            "label": "Brightness",
+                            "type": "range",
+                            "options": [0, 255],
+                            "content": ["id_diplay_brightness", 1, 1]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "layouts": {
+        "keymap": [
+            [
+                "\n\n\n\n\n\n\n\n\ne0",
+                {"x":0.5},
+                "0,1",
+                "0,2",
+                "0,3"
+            ],
+            [
+                "1,0",
+                {"x":0.5},
+                "1,1",
+                "1,2",
+                "1,3"
+            ]
+        ]
+    }
+}
