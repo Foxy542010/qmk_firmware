@@ -1,7 +1,7 @@
 // Copyright 2024-2025 Šimon Ondrašík
 
-#include "quantum.h"
-#include "oled_driver.h"
+#include <quantum.h>
+#include <oled_driver.h>
 
 #define FRAME_DURATION 200
 

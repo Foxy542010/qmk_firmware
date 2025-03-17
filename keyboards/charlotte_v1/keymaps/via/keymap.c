@@ -54,8 +54,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record)
                 next_layer = LAYER_SWITCH_START;
             }
             layer_move(next_layer);
-            void layer_switcher(layer_transition);
-            layer_switcher(next_layer);
             return false;
     }
     return true;
