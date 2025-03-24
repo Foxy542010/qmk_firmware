@@ -32,16 +32,16 @@ static void render_layer_state(void)
     switch (get_highest_layer(layer_state))
     {
         case 0:
-            oled_write_raw_P(layer_animation_1, sizeof(layer_animation_1))
+            oled_write_raw_P(layer_animation_1, sizeof(layer_animation_1));
             break;
         case 1:
-            oled_write_raw_P(layer_animation_2, sizeof(layer_animation_2))
+            oled_write_raw_P(layer_animation_2, sizeof(layer_animation_2));
             break;
         case 2:
-            oled_write_raw_P(layer_animation_3, sizeof(layer_animation_3))
+            oled_write_raw_P(layer_animation_3, sizeof(layer_animation_3));
             break;
         case 3:
-            oled_write_raw_P(layer_animation_4, sizeof(layer_animation_4))
+            oled_write_raw_P(layer_animation_4, sizeof(layer_animation_4));
             break;
     }
 }
