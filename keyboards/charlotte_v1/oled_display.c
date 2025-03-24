@@ -29,14 +29,21 @@ static void render_layer_state(void)
         0,127,111, 70,110,124,120, 96, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 96,120,124,110, 70,111,127,  0,
     };
     
-    static const char* const layer_animations[4] = {
-        layer_animation_1,
-        layer_animation_2,
-        layer_animation_3,
-        layer_animation_4
-    };
-
-    oled_write_raw_P(layer_animations[get_highest_layer(layer_state) + 1], sizeof(layer_animations[0]));
+    switch (get_highest_layer(layer_state))
+    {
+        case 0:
+            oled_write_raw_P(layer_animation_1, sizeof(layer_animation_1))
+            break;
+        case 1:
+            oled_write_raw_P(layer_animation_2, sizeof(layer_animation_2))
+            break;
+        case 2:
+            oled_write_raw_P(layer_animation_3, sizeof(layer_animation_3))
+            break;
+        case 3:
+            oled_write_raw_P(layer_animation_4, sizeof(layer_animation_4))
+            break;
+    }
 }
 void trigger_layer_state(void)
 {
