@@ -91,6 +91,6 @@ static void render_layer(void)
 }
 bool oled_task_user(void) {
     render_layer();
-    return false;
+    return true;
 }
 #endif
