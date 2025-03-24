@@ -54,8 +54,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record)
                 next_layer = LAYER_SWITCH_START;
             }
             layer_move(next_layer);
-            void trigger_layer_state(void);
-            trigger_layer_state();
             return false;
     }
     return true;
@@ -67,4 +65,32 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
     [2] = { ENCODER_CCW_CW(_______, _______) },
     [3] = { ENCODER_CCW_CW(_______, _______) },
 };
+#endif
+
+#if defined(OLED_ENABLE)
+static void render_layer(void)
+{
+    switch (get_highest_layer(layer_state))
+    {
+        case 0:
+            oled_write_P(PSTR("Default"), false);
+            break;
+        case 1:
+            oled_write_P(PSTR("2"), false);
+            break;
+        case 2:
+            oled_write_P(PSTR("3"), false);
+            break;
+        case 3:
+            oled_write_P(PSTR("4"), false);
+            break;
+        default:
+            oled_write_P(PSTR("Unknown"), false);
+            break;
+    }
+}
+bool oled_task_user(void) {
+    render_layer();
+    return false;
+}
 #endif
