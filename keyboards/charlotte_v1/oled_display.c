@@ -1,6 +1,6 @@
 // Copyright 2024-2025 Šimon Ondrašík
 
-/*#include QMK_KEYBOARD_H
+#include QMK_KEYBOARD_H
 
 static void render_layer_state(void)
 {
@@ -37,8 +37,27 @@ static void render_layer_state(void)
     };
 
     oled_write_raw_P(layer_animations[get_highest_layer(layer_state) + 1], sizeof(layer_animations[0]));
+
+    /*switch (get_highest_layer(layer_state))
+    {
+        case 0:
+            oled_write_P(PSTR("Default"), false);
+            break;
+        case 1:
+            oled_write_P(PSTR("2"), false);
+            break;
+        case 2:
+            oled_write_P(PSTR("3"), false);
+            break;
+        case 3:
+            oled_write_P(PSTR("4"), false);
+            break;
+        default:
+            oled_write_P(PSTR("Unknown"), false);
+            break;
+    }*/
 }
-bool oled_task_user(void) {
+void trigger_layer_state(void)
+{
     render_layer_state();
-    return false;
-}*/
+}
