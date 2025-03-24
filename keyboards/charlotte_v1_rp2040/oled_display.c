@@ -1,6 +1,6 @@
 // Copyright 2024-2025 Šimon Ondrašík
 
-/*#include QMK_KEYBOARD_H
+#include QMK_KEYBOARD_H
 
 static void render_layer_state(void)
 {
@@ -38,7 +38,7 @@ static void render_layer_state(void)
 
     oled_write_raw_P(layer_animations[get_highest_layer(layer_state) + 1], sizeof(layer_animations[0]));
 }
-bool oled_task_user(void) {
+void trigger_layer_state(void)
+{
     render_layer_state();
-    return false;
-}*/
+}
