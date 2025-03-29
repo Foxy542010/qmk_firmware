@@ -54,8 +54,10 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record)
                 next_layer = LAYER_SWITCH_START;
             }
             layer_move(next_layer);
-            void trigger_layer_state(void);
-            trigger_layer_state();
+            #if defined(OLED_ENABLE)
+                void trigger_layer_state(void);
+                trigger_layer_state();
+            #endif
             return false;
     }
     return true;
