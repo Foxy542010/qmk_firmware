@@ -1,3 +1,5 @@
+// Copyright 2024-2025 Šimon Ondrašík
+
 #pragma once
 
 #define NO_MUSIC_MODE

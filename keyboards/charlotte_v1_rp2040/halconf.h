@@ -1,3 +1,5 @@
+// Copyright 2024-2025 Šimon Ondrašík
+
 #pragma once
 
 #define HAL_USE_I2C TRUE
