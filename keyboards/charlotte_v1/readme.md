@@ -1,4 +1,4 @@
-# charlotte_v1
+# Charlotte V1
 
 ![charlotte_v1](imgur.com image replace me!)
 
