@@ -2,8 +2,6 @@
 
 #pragma once
 
-#define NO_MUSIC_MODE
-
 #if defined(OLED_ENABLE)
 #define OLED_DISPLAY_ADDRESS 0x3C
 #define OLED_BRIGHTNESS 255
