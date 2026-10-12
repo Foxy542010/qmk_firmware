@@ -1,4 +1,4 @@
-// Copyright 2024-2025 Šimon Ondrašík
+// Copyright 2024-2026 Kitsune54 (Šimon Ondrašík)
 
 #include QMK_KEYBOARD_H
 
@@ -7,7 +7,7 @@
 #define LAYER_SWITCH_END 3
 
 enum via_display_value {
-    id_diplay_brightness = 1,
+    id_display_brightness = 1,
 };
 enum custom_macros { KC_SL = QK_USER, };
 

@@ -1,4 +1,4 @@
-// Copyright 2024-2025 Šimon Ondrašík
+// Copyright 2024-2026 Kitsune54 (Šimon Ondrašík)
 
 #include QMK_KEYBOARD_H
 

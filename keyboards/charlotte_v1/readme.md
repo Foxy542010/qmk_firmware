@@ -4,9 +4,9 @@
 
 *A short description of the keyboard/project*
 
-* Keyboard Maintainer: [Foxy5410](https://github.com/Foxy542010)
-* Hardware Supported: *The PCBs, controllers supported*
-* Hardware Availability: *Links to where you can find this hardware*
+* Keyboard Maintainer: [Kitsune54](https://github.com/Foxy542010)
+* Hardware Supported:
+* Hardware Availability:
 
 Make example for this keyboard (after setting up your build environment):
 
